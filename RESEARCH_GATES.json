@@ -1,0 +1,187 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 1 November 2026 for release 0.1.0-candidate from the dated prior-art record (novelty_report.md, 31 October to 1 November 2026), the round-one domain and devil's advocate reviews and the reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Proofs of Conjectures 1 and 2 of Persoons et al. (2024) (Theorems 3 and 4).",
+   "unit": "statement",
+   "paperLocation": "Theorems 3-4, Section 4",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "corpus": "web search and Semantic Scholar (earlier scouting search)",
+     "query": "Persoons Sensi Prasse Van Mieghem conjecture proof NIMFA 1/(1+t); NIMFA convergence; SIS mean-field decay rate"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, Semantic Scholar citers of Persoons et al. 2024 (eight works), arXiv title searches, Crossref (novelty_report.md)",
+     "query": "networked SIS critical spectral radius one convergence rate 1/t; -x-log(1-x) Lyapunov function SIS; citers of Persoons et al. 2024"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "Evidence Press live feed (210 releases)",
+     "query": "NIMFA, SIS, epidemic, contagion, spreading, mean-field"
+    }
+   ],
+   "closestPriorWork": "Persoons et al. 2024 (conjectures, Appendix E outline with (E8)-(E9) unproved); Mei et al. 2017 Theorem 4 (exponential decay below threshold, degenerate at R0 = 1); Khanafer et al. 2016 (diagonal weights, qualitative stability); Prasse and Van Mieghem 2020 (near-threshold approximations); Shuai and van den Driessche 2013 (Volterra-type Lyapunov functions); Van Mieghem 2016 (conditional Riccati bounds for the Markovian prevalence)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Quantitative Riccati envelope from Jensen's inequality on the Volterra-type function, valid at the critical point (Theorem 1, Corollary 2).",
+   "unit": "method",
+   "paperLocation": "Theorem 1, Corollary 2, Section 3",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "corpus": "web search and Semantic Scholar (earlier scouting search)",
+     "query": "Persoons Sensi Prasse Van Mieghem conjecture proof NIMFA 1/(1+t); NIMFA convergence; SIS mean-field decay rate"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, Semantic Scholar citers of Persoons et al. 2024 (eight works), arXiv title searches, Crossref (novelty_report.md)",
+     "query": "networked SIS critical spectral radius one convergence rate 1/t; -x-log(1-x) Lyapunov function SIS; citers of Persoons et al. 2024"
+    }
+   ],
+   "closestPriorWork": "Shuai and van den Driessche 2013; Dirr et al. 2015; Rantzer 2015; Khanafer et al. 2016 (the function, separable Lyapunov functions and diagonal weights are classical)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Critical constant kappa(G), global node-wise limits, kappa <= 1 iff regular, r T(r) -> kappa (Theorem 7, Corollary 8).",
+   "unit": "statement",
+   "paperLocation": "Theorem 7, Corollary 8, Section 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, Semantic Scholar citers of Persoons et al. 2024 (eight works), arXiv title searches, Crossref (novelty_report.md)",
+     "query": "networked SIS critical spectral radius one convergence rate 1/t; -x-log(1-x) Lyapunov function SIS; citers of Persoons et al. 2024"
+    }
+   ],
+   "closestPriorWork": "Carr 1981 (centre-manifold mechanism); Prasse and Van Mieghem 2020; Goltsev et al. 2012 and Pastor-Satorras and Castellano 2016 (eigenvector localisation)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Node-wise order n^(1/3), unconditional transition-time bounds and numerical failures of eq. (20) of Persoons et al. (Proposition 9, Theorem 14, Section 10).",
+   "unit": "statement",
+   "paperLocation": "Proposition 9, Theorem 14, Table 3",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, Semantic Scholar citers of Persoons et al. 2024 (eight works), arXiv title searches, Crossref (novelty_report.md)",
+     "query": "networked SIS critical spectral radius one convergence rate 1/t; -x-log(1-x) Lyapunov function SIS; citers of Persoons et al. 2024"
+    }
+   ],
+   "closestPriorWork": "Persoons et al. 2024 Section III (Lemma 5, eq. (20), Assumption 1)",
+   "verdict": "new-in-bounded-search"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Persoons, Sensi, Prasse and Van Mieghem, Phys. Rev. E 109, 034308 (2024), doi:10.1103/PhysRevE.109.034308; arXiv:2305.12446v3",
+   "usedFor": "The conjectures, the timescale-separation setting, Lemma 5, eq. (20), Assumption 1 and Appendix E",
+   "readWhat": "Full text including Section III and Appendix E",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_report.md, Target; manuscript Sections 1.1 and 9"
+  },
+  {
+   "citation": "Prasse and Van Mieghem, J. Math. Biol. 81, 1299 (2020), doi:10.1007/s00285-020-01542-6",
+   "usedFor": "Near-threshold approximations",
+   "readWhat": "Full text",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_report.md, Related work read in full"
+  },
+  {
+   "citation": "Khanafer, Basar and Gharesifard, Automatica 74 (2016), doi:10.1016/j.automatica.2016.07.037",
+   "usedFor": "Diagonal Lyapunov weights (Lemma A.1) on directed graphs",
+   "readWhat": "Full text",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_report.md; manuscript Section 2.3"
+  },
+  {
+   "citation": "Mei, Mohagheghi, Zampieri and Bullo, Annu. Rev. Control 44 (2017), doi:10.1016/j.arcontrol.2017.09.002",
+   "usedFor": "Exponential decay below threshold (Theorem 4)",
+   "readWhat": "Full text",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_report.md; manuscript Section 1.2"
+  },
+  {
+   "citation": "Simon and Kiss, DCDS-B 23, 2005 (2018), doi:10.3934/dcdsb.2018192; arXiv:1704.01726",
+   "usedFor": "NIMFA upper-bounds the exact stochastic SIS node probabilities (Proposition 12)",
+   "readWhat": "Full text",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_report.md; manuscript Section 8"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Priority holds only within a bounded search.",
+   "closingQuestion": "Has either conjecture been proved elsewhere, for example in the 2026 follow-up on temporal clique graphs?",
+   "triedOrSearched": "Dated searches on 31 October and 1 November 2026, citers of the 2024 paper, the abstract of Persoons and Van Mieghem 2026.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Exhaustive search out of scope; the 2026 follow-up full text was not read; disclosed in the manuscript."
+  },
+  {
+   "limitation": "Sharp growth bound on heterogeneous graphs.",
+   "closingQuestion": "Is the growth time at most about (1 - r)/r on every graph?",
+   "triedOrSearched": "Rigorous bound exact on regular graphs; Table 2 shows it is conservative on heterogeneous graphs.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; stated in Section 11."
+  },
+  {
+   "limitation": "Uniform-in-time node-wise order.",
+   "closingQuestion": "Is sup_t t x_i(t) of order n^(1/3) uniformly?",
+   "triedOrSearched": "Asymptotic order n^(1/3) proved; universal sqrt(n) bound proved.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research."
+  },
+  {
+   "limitation": "eq. (20) failures are numerical.",
+   "closingQuestion": "Can interval integration certify the Table 3 failures?",
+   "triedOrSearched": "Two independent solvers (LSODA, Radau with analytic Jacobian) at relative tolerance 1e-11 agree.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Not load-bearing for any theorem; labelled numerical throughout."
+  },
+  {
+   "limitation": "Deterministic mean-field model; synthetic networks.",
+   "closingQuestion": "How do the constants behave for the stochastic model and real contact networks?",
+   "triedOrSearched": "Stochastic upper bound (Proposition 12) for a common recovery rate; Table 1b seed and size dependence.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Different problems; stated as limitations."
+  },
+  {
+   "limitation": "Claimed failure of eq. (20) included a case outside its hypotheses (round-one objection).",
+   "closingQuestion": "Do failures occur within the hypotheses?",
+   "triedOrSearched": "Table 3 with cases inside the hypotheses, two solvers.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the editor, 1 November 2026",
+  "date": "2026-11-01",
+  "proposals": [
+   "Extend Theorem 7 to directed and heterogeneous recovery",
+   "Close the gap between n^(1/3) and sqrt(n) for nodes",
+   "Cover the exact stochastic model",
+   "Check seed and size dependence of kappa",
+   "Check the source ensembles"
+  ],
+  "actions": [
+   "Theorem 7 extended with a numerical check",
+   "Hölder argument in Proposition 9(d)",
+   "Proposition 12 via Simon and Kiss 2018",
+   "Table 1b",
+   "Median kappa 0.96 for the N = 50 Erdős–Rényi ensembles"
+  ]
+ }
+}

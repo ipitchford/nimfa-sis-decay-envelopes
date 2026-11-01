@@ -1,0 +1,8 @@
+# Pinned versions used for all numerical results (Python 3.11).
+# exact_checks.py needs only sympy (and mpmath, its dependency).
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+mpmath==1.3.0
+networkx==3.4.2
+sympy==1.14.0

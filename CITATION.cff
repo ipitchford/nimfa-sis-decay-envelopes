@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "How fast does an epidemic die out on a network? Sharp decay envelopes for mean-field SIS epidemics and a proof of the Persoons–Sensi–Prasse–Van Mieghem conjectures"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23856194
+date-released: 2026-11-01
+repository-code: "https://github.com/ipitchford/nimfa-sis-decay-envelopes"
+url: "https://evidencepress.org/releases/nimfa-sis-decay-envelopes/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23856194
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23856193
+    description: "Concept DOI (all versions)"
+keywords:
+  - SIS epidemic
+  - NIMFA
+  - epidemic threshold
+  - decay rate
+  - Lyapunov function
+  - network epidemics
+abstract: "For the N-intertwined mean-field (NIMFA) SIS epidemic model on networks, proofs of the two decay conjectures of Persoons, Sensi, Prasse and Van Mieghem (2024): at or below the epidemic threshold the average infection level is at most 1/(1+t) (time in mean recovery times), and above it the excess over the endemic level, starting from above, obeys the same bound. Extensions to time-varying, heterogeneous-recovery and directed networks and to the expected prevalence of the exact stochastic model; attainment on regular graphs; at the threshold the average decays like kappa(G)/t with an explicit eigenvector constant kappa(G) <= 1; node-wise bounds; unconditional transition-time bounds. Unrefereed candidate; internal AI-assisted review only. Text, data and diagrams CC0-1.0; code MIT."

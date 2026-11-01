@@ -1,0 +1,109 @@
+{
+ "schemaVersion": "1.0",
+ "release": "nimfa-sis-decay-envelopes",
+ "version": "0.1.0-candidate",
+ "doi": "10.5281/zenodo.23856194",
+ "conceptDoi": "10.5281/zenodo.23856193",
+ "creator": "Anonymous",
+ "status": "unrefereed candidate",
+ "model": "NIMFA SIS dynamics dx_i/dt = -delta_i x_i + (1 - x_i)(Bx)_i on [0,1]^n with nonnegative (possibly time-varying or directed) infection matrix B; y(t) is the average infection level; R0 = rho(B) for unit recovery.",
+ "definitions": {
+  "h": "h(s) = -s - log(1 - s), the Volterra-type function",
+  "kappa(G)": "critical constant (5.2) of the leading eigenvector, limit of t y(t) at the threshold",
+  "T(r)": "upper-transition time of Persoons et al. (their eq. 8)"
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "kind": "theorem",
+   "location": "Theorem 1, Corollary 2, Section 3",
+   "statement": "Spectral Riccati envelope: under a quadratic-form condition (D), a weighted average of h(x_i) = -x_i - log(1 - x_i) obeys a scalar Riccati comparison, and Jensen's inequality transfers it to the weighted average of x_i. (D) holds for symmetric infection matrices, time-varying networks, node-dependent recovery and, with Perron weights, directed networks.",
+   "scope": "NIMFA-type systems (2.1) with piecewise continuous data.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C2",
+   "kind": "theorem",
+   "location": "Theorem 3, Section 4.1",
+   "statement": "Conjecture 1 of Persoons et al. (2024): for symmetric B >= 0 with spectral radius at most 1 and unit recovery, y(t) <= 1/(1+t) for every initial state and t >= 0 (more precisely, the Riccati envelope with rate 1 - rho).",
+   "scope": "Graph may be disconnected; time in mean recovery times.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C3",
+   "kind": "theorem",
+   "location": "Theorem 4, Section 4.2",
+   "statement": "Conjecture 2, sharpened: above threshold on a connected graph, starting at or above the endemic equilibrium p, the excess y(t) - y_inf is at most (1 - p_bar)/(1+t), with an exponential form.",
+   "scope": "Symmetric irreducible B, unit recovery, p <= x(0) <= u.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C4",
+   "kind": "proposition",
+   "location": "Propositions 5 and 6",
+   "statement": "The envelope is attained by regular graphs (so the constant 1 cannot be lowered), and the subcritical exponent 1 - rho is exact for every connected graph.",
+   "scope": "Elementary.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C5",
+   "kind": "theorem",
+   "location": "Theorem 7, Corollary 8, Section 5",
+   "statement": "At the threshold, t x_i(t) converges for every node and nonzero initial state to v_i / sum_j u_j delta_j v_j^2 (directed and heterogeneous recovery included); for the population average the limit is kappa(G) <= 1, with equality iff the graph is regular; the transition time satisfies r T(r) -> kappa(G).",
+   "scope": "The 1/t mechanism is the standard centre-manifold reduction; the global statement, constants and characterisation are the proposed contribution.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C6",
+   "kind": "proposition",
+   "location": "Proposition 9, Section 6",
+   "statement": "Node-wise: x_i(t) <= sqrt(n/(t(1+t))) at or below threshold, and the worst asymptotic node constant has order exactly n^(1/3).",
+   "scope": "Symmetric B, unit recovery; the uniform-in-time order is open.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C7",
+   "kind": "proposition",
+   "location": "Proposition 10, Section 7",
+   "statement": "Stronger statements fail: the unweighted average can break the bound on directed networks (explicit two-node example), and the arithmetic-mean parameter does not suffice.",
+   "scope": "Counterexamples.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C8",
+   "kind": "proposition",
+   "location": "Propositions 11 and 12, Section 8",
+   "statement": "The envelopes hold for the infectious fraction in SIR/SIRS network models and for the expected prevalence of the exact Markovian SIS process with a common recovery rate (via Simon and Kiss 2018).",
+   "scope": "Stochastic statement is an upper bound only; common recovery rate; independent initial states.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C9",
+   "kind": "theorem",
+   "location": "Proposition 13, Theorem 14, Section 9",
+   "statement": "Mixed initial states never converge slower than both extremes; unconditional transition-time bounds hold for all R0, exact for regular graphs and conservative on strongly heterogeneous ones.",
+   "scope": "Answers the timescale-separation question of Persoons et al. under the stated hypotheses.",
+   "evidence": "written proof in nimfa_envelopes.pdf; symbolic and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C10",
+   "kind": "numerical",
+   "location": "Section 10, Tables 1-3, Figure 1",
+   "statement": "On synthetic networks of 1000 nodes kappa ranges from about 0.92 (Watts-Strogatz) to about 0.035 (random geometric); at R0 = 1 the time for the average to fall below 0.1% is about 922 versus 39 recovery times. Two solvers show the growth formula of Persoons et al. (eq. 20) under-estimates the growth time within its hypotheses away from R0 -> 1.",
+   "scope": "Numerical, fixed seeds, synthetic networks; eq. (20) failures not interval-certified.",
+   "evidence": "illustrations.py and eq20_check.py outputs (illustrations.json, eq20_check.json)"
+  }
+ ],
+ "computedNotProved": [
+  "kappa, transition times and node constants on synthetic networks (Tables 1, 1b, 2, Figure 1)",
+  "numerical failures of eq. (20) of Persoons et al. (Table 3, LSODA and Radau at relative tolerance 1e-11)"
+ ],
+ "notClaimed": [
+  "a sharp growth bound on heterogeneous graphs",
+  "the uniform-in-time node-wise order",
+  "scaling laws for kappa",
+  "statements about a particular real epidemic or contact network",
+  "interval-certified eq. (20) counterexamples"
+ ],
+ "assurance": "Written proofs, exact symbolic and numerical checks with negative controls and fault injection; internal AI-assisted review only; not peer-reviewed, independently reproduced or formally verified."
+}

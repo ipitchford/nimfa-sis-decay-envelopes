@@ -1,0 +1,202 @@
+{
+  "script": "numerical_checks.py",
+  "numpy": "2.3.5",
+  "networkx": "3.4.2",
+  "python_optimize_flag": 1,
+  "n_positive": 23,
+  "n_negative_controls": 9,
+  "failed": [],
+  "status": "PASS",
+  "results": [
+    {
+      "name": "N1a_static_envelope_all_infected",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 0.0
+    },
+    {
+      "name": "N1b_static_envelope_entropy_parameter",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 1.1102230246251565e-16
+    },
+    {
+      "name": "N2a_directed_weight_nsd",
+      "kind": "positive",
+      "pass": true,
+      "max_rel_eig": 7.322990948588499e-16
+    },
+    {
+      "name": "C1c_identity_weight_not_enough_directed",
+      "kind": "negative_control",
+      "pass": true
+    },
+    {
+      "name": "N2b_directed_weighted_envelope",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 2.220446049250313e-16
+    },
+    {
+      "name": "C1_directed_unweighted_fails",
+      "kind": "negative_control",
+      "pass": true,
+      "max_excess": 0.05730907904828336
+    },
+    {
+      "name": "C1b_two_node_counterexample",
+      "kind": "negative_control",
+      "pass": true,
+      "excess_at_0_05": 0.0010802943358356742
+    },
+    {
+      "name": "N2c_two_node_weighted_ok",
+      "kind": "positive",
+      "pass": true
+    },
+    {
+      "name": "N3a_heterogeneous_recovery",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 0.0
+    },
+    {
+      "name": "N3b_heterogeneous_directed",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 0.0
+    },
+    {
+      "name": "N4_temporal_envelope",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 0.0,
+      "commutator": 2.143549027058631
+    },
+    {
+      "name": "N5a_endemic_algebraic",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 1.457567400109383e-11
+    },
+    {
+      "name": "N5b_endemic_exponential",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 3.3306690738754696e-15
+    },
+    {
+      "name": "N6_disconnected",
+      "kind": "positive",
+      "pass": true
+    },
+    {
+      "name": "N7a_kappa_limit",
+      "kind": "positive",
+      "pass": true,
+      "detail_json": "{\"ER\": {\"kappa\": 0.8287091913230644, \"t_y_at_2e4\": 0.8287366597662025, \"rel_err\": 3.314605826225044e-05, \"node_rel_err\": 9.3222342235235e-05, \"max_node_const\": 1.894997295534152}, \"BA\": {\"kappa\": 0.21964994348351002, \"t_y_at_2e4\": 0.21974044642769824, \"rel_err\": 0.0004120326313446756, \"node_rel_err\": 0.0005668341340580434, \"max_node_const\": 2.086708225866908}, \"star\": {\"kappa\": 0.27999999999999986, \"t_y_at_2e4\": 0.2800095563293607, \"rel_err\": 3.412974771727879e-05, \"node_rel_err\": 3.8817670243052076e-05, \"max_node_const\": 1.7499999999999998}, \"cycle\": {\"kappa\": 1.0, \"t_y_at_2e4\": 0.9999500025130708, \"rel_err\": 4.9997486929242996e-05, \"node_rel_err\": 4.999748693745823e-05, \"max_node_const\": 1.0000000000000082}}"
+    },
+    {
+      "name": "N7b_node_limits",
+      "kind": "positive",
+      "pass": true
+    },
+    {
+      "name": "N7c_kappa_regular_is_one",
+      "kind": "positive",
+      "pass": true
+    },
+    {
+      "name": "C2_conjectured_constant_not_sharp_for_BA",
+      "kind": "negative_control",
+      "pass": true,
+      "t_y": 0.21974044642769824
+    },
+    {
+      "name": "C3_nodewise_one_over_t_fails",
+      "kind": "negative_control",
+      "pass": true
+    },
+    {
+      "name": "N7d_rT_to_kappa",
+      "kind": "positive",
+      "pass": true,
+      "rT": [
+        0.2566779351787787,
+        0.2248899307912616,
+        0.22034148285516478
+      ],
+      "kappa": 0.21964994348351002
+    },
+    {
+      "name": "N8_nodewise_bound",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": -0.08885738577829036
+    },
+    {
+      "name": "N9_growth_subsolution_and_sandwich",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": 3.5269565046291973e-12
+    },
+    {
+      "name": "N10_sir_sirs",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": -4.930941485258589e-05
+    },
+    {
+      "name": "N11a_regular_equality",
+      "kind": "positive",
+      "pass": true,
+      "max_abs": 1.8806312063190944e-10
+    },
+    {
+      "name": "C4_constant_below_one_fails",
+      "kind": "negative_control",
+      "pass": true
+    },
+    {
+      "name": "N11b_subcritical_rate_exact",
+      "kind": "positive",
+      "pass": true,
+      "ratio": 0.999999995751598
+    },
+    {
+      "name": "C5_faster_rate_fails",
+      "kind": "negative_control",
+      "pass": true,
+      "ratio": 1.0100501627930705
+    },
+    {
+      "name": "C7_kappa_one_percent_low_rejected",
+      "kind": "negative_control",
+      "pass": true
+    },
+    {
+      "name": "N7e_kappa_directed_heterogeneous",
+      "kind": "positive",
+      "pass": true,
+      "max_rel_err": 8.817896729196892e-05
+    },
+    {
+      "name": "N12a_T14_end_to_end",
+      "kind": "positive",
+      "pass": true,
+      "max_excess": -0.0033220785238447298,
+      "m1_max": 0.3367310689380835
+    },
+    {
+      "name": "N12b_T14_regular_exact",
+      "kind": "positive",
+      "pass": true,
+      "max_err": 1.9539925233402755e-14
+    },
+    {
+      "name": "C6_arithmetic_mean_fails",
+      "kind": "negative_control",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "script": "illustrations.py",
+  "numpy": "2.3.5",
+  "networkx": "3.4.2",
+  "rows": [
+    {
+      "graph": "Erdos-Renyi (mean degree 10)",
+      "n": 1000,
+      "edges": 4957,
+      "kappa": 0.8092940368902776,
+      "t_y_at_1e4": 0.8093348856574897,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 1.7942422587331757,
+      "hub_t_x_at_1e4": 1.7941301377100816,
+      "T_at_threshold_r_1e-3": 809.8747517135353,
+      "R0_1.2": {
+        "observed_T": 50.52011461128573,
+        "observed_T_decay": 24.83005633013113,
+        "observed_T_growth": 50.52011461128573,
+        "persoons_lemma5_growth": 55.67279644780748,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.027648213495387472,
+        "p_min": 0.026904356113602652,
+        "T_decay_bound": 115.1037764199634,
+        "T_growth_bound": 251.3337527445374,
+        "T_bound": 251.3337527445374,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 12.930139104300139,
+        "observed_T_decay": 6.220066916376401,
+        "observed_T_growth": 12.930139104300139,
+        "persoons_lemma5_growth": 12.929695960342688,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.1617775969643711,
+        "p_min": 0.13925005731482737,
+        "T_decay_bound": 26.8842658008465,
+        "T_growth_bound": 56.147505668054045,
+        "T_bound": 56.147505668054045,
+        "persoons_eq23": 999.0
+      }
+    },
+    {
+      "graph": "Watts-Strogatz small world",
+      "n": 1000,
+      "edges": 5000,
+      "kappa": 0.9197657828599467,
+      "t_y_at_1e4": 0.9200985867435738,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 1.6233974407859126,
+      "hub_t_x_at_1e4": 1.6229628488514545,
+      "T_at_threshold_r_1e-3": 922.3453721258385,
+      "R0_1.2": {
+        "observed_T": 51.48024848581568,
+        "observed_T_decay": 25.080121057192255,
+        "observed_T_growth": 51.48024848581568,
+        "persoons_lemma5_growth": 54.38562452092584,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.11505680127888697,
+        "p_min": 0.10318469978114603,
+        "T_decay_bound": 38.8610810855847,
+        "T_growth_bound": 80.5014610953165,
+        "T_bound": 80.5014610953165,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 12.585053843662624,
+        "observed_T_decay": 5.655024194351381,
+        "observed_T_growth": 12.585053843662624,
+        "persoons_lemma5_growth": 12.779125552594387,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.6516519759798046,
+        "p_min": 0.39454557343609087,
+        "T_decay_bound": 8.135749804947718,
+        "T_growth_bound": 18.09138066117887,
+        "T_bound": 18.09138066117887,
+        "persoons_eq23": 999.0
+      }
+    },
+    {
+      "graph": "Stochastic block model (4 communities)",
+      "n": 1000,
+      "edges": 5176,
+      "kappa": 0.8217810896162647,
+      "t_y_at_1e4": 0.8218597751476407,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 2.048727987579118,
+      "hub_t_x_at_1e4": 2.048518982040224,
+      "T_at_threshold_r_1e-3": 822.3509975497259,
+      "R0_1.2": {
+        "observed_T": 50.685252278334445,
+        "observed_T_decay": 24.900123936678064,
+        "observed_T_growth": 50.685252278334445,
+        "persoons_lemma5_growth": 56.27815341756041,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.03445040051370138,
+        "p_min": 0.033303095534202055,
+        "T_decay_bound": 98.24959944749072,
+        "T_growth_bound": 212.2514475543862,
+        "T_bound": 212.2514475543862,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 12.88009992223473,
+        "observed_T_decay": 6.140047633736121,
+        "observed_T_growth": 12.88009992223473,
+        "persoons_lemma5_growth": 12.954432339693552,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.1986959498745295,
+        "p_min": 0.16576009111845877,
+        "T_decay_bound": 22.70035482194913,
+        "T_growth_bound": 47.38265652512513,
+        "T_bound": 47.38265652512513,
+        "persoons_eq23": 999.0
+      }
+    },
+    {
+      "graph": "Random geometric (2-D)",
+      "n": 1000,
+      "edges": 5254,
+      "kappa": 0.035367829332820046,
+      "t_y_at_1e4": 0.03538028259394838,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 1.2838308898252524,
+      "hub_t_x_at_1e4": 1.284129022876582,
+      "T_at_threshold_r_1e-3": 39.45070098918514,
+      "R0_1.2": {
+        "observed_T": 67.00057718124822,
+        "observed_T_decay": 65.47056400084061,
+        "observed_T_growth": 67.00057718124822,
+        "persoons_lemma5_growth": 53.251104828284845,
+        "persoons_lemma5_exceeded": true,
+        "lemma5_hypotheses_hold": false,
+        "kappa_endemic": 1.7893239252813864e-09,
+        "p_min": 1.7893239220797063e-09,
+        "T_decay_bound": 989.6957418740104,
+        "T_growth_bound": 7757835641.3087845,
+        "T_bound": 7757835641.3087845,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 37.880088065487406,
+        "observed_T_decay": 20.250047078303062,
+        "observed_T_growth": 37.880088065487406,
+        "persoons_lemma5_growth": 12.6652038083673,
+        "persoons_lemma5_exceeded": true,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.007318954617842681,
+        "p_min": 0.007265776727709199,
+        "T_decay_bound": 255.77661037544837,
+        "T_growth_bound": 4531.345777981812,
+        "T_bound": 4531.345777981812,
+        "persoons_eq23": 999.0
+      }
+    },
+    {
+      "graph": "Holme-Kim (scale-free, clustered)",
+      "n": 1000,
+      "edges": 2990,
+      "kappa": 0.12060095392477378,
+      "t_y_at_1e4": 0.12073096036565019,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 2.6810934533855537,
+      "hub_t_x_at_1e4": 2.683204226506467,
+      "T_at_threshold_r_1e-3": 127.26144639252783,
+      "R0_1.2": {
+        "observed_T": 41.135195144194796,
+        "observed_T_decay": 23.430111151780338,
+        "observed_T_growth": 41.135195144194796,
+        "persoons_lemma5_growth": 59.21813672701996,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.0022301171082840156,
+        "p_min": 0.0022251547526016594,
+        "T_decay_bound": 516.2306551437439,
+        "T_growth_bound": 2570.5194939880666,
+        "T_bound": 2570.5194939880666,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 16.185162387361277,
+        "observed_T_decay": 11.130111669529256,
+        "observed_T_growth": 16.185162387361277,
+        "persoons_lemma5_growth": 13.36713659636474,
+        "persoons_lemma5_exceeded": true,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.04024572017120075,
+        "p_min": 0.038688666908984946,
+        "T_decay_bound": 87.25164074328424,
+        "T_growth_bound": 236.94803196402827,
+        "T_bound": 236.94803196402827,
+        "persoons_eq23": 999.0
+      }
+    },
+    {
+      "graph": "Barabasi-Albert (m=2)",
+      "n": 1000,
+      "edges": 1996,
+      "kappa": 0.04972718091821919,
+      "t_y_at_1e4": 0.04977904092864742,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 2.159255120136267,
+      "hub_t_x_at_1e4": 2.161029253106629,
+      "T_at_threshold_r_1e-3": 56.69699379924796,
+      "R0_1.2": {
+        "observed_T": 36.04001043515596,
+        "observed_T_decay": 22.535006524867917,
+        "observed_T_growth": 36.04001043515596,
+        "persoons_lemma5_growth": 58.15128855310934,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": false,
+        "kappa_endemic": 0.0003070663501336937,
+        "p_min": 0.0003069720893346288,
+        "T_decay_bound": 861.6980892333606,
+        "T_growth_bound": 16112.2540966165,
+        "T_bound": 16112.2540966165,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 17.65523599979006,
+        "observed_T_decay": 13.180176181095046,
+        "observed_T_growth": 17.65523599979006,
+        "persoons_lemma5_growth": 13.346180934661742,
+        "persoons_lemma5_exceeded": true,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.011811894282165253,
+        "p_min": 0.011674002202301898,
+        "T_decay_bound": 206.98598363762684,
+        "T_growth_bound": 829.2939021878746,
+        "T_bound": 829.2939021878746,
+        "persoons_eq23": 999.0
+      }
+    },
+    {
+      "graph": "Star (1 hub, 199 leaves)",
+      "n": 200,
+      "edges": 199,
+      "kappa": 0.14106735979665885,
+      "t_y_at_1e4": 0.1410891187551071,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 1.8676087274781226,
+      "hub_t_x_at_1e4": 1.8677454373454878,
+      "T_at_threshold_r_1e-3": 142.61456332341726,
+      "R0_1.2": {
+        "observed_T": 35.01004024001636,
+        "observed_T_decay": 18.395021142962037,
+        "observed_T_growth": 35.01004024001636,
+        "persoons_lemma5_growth": 56.61265127361189,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.02454250104098731,
+        "p_min": 0.02395459535944178,
+        "T_decay_bound": 130.04012996105178,
+        "T_growth_bound": 201.01458100257713,
+        "T_bound": 201.01458100257713,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 10.94502762884088,
+        "observed_T_decay": 7.810019715052286,
+        "observed_T_growth": 10.94502762884088,
+        "persoons_lemma5_growth": 13.167722564260233,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.1026923470163467,
+        "p_min": 0.09312873830512253,
+        "T_decay_bound": 43.269627160209176,
+        "T_growth_bound": 64.68782324964772,
+        "T_bound": 64.68782324964772,
+        "persoons_eq23": 999.0
+      }
+    },
+    {
+      "graph": "Hub joined to 158-regular graph (2001 nodes)",
+      "n": 2001,
+      "edges": 160000,
+      "kappa": 0.5916047347622526,
+      "t_y_at_1e4": 0.5926131028613146,
+      "max_ratio_y_times_1_plus_t": 1.0,
+      "max_node_constant": 6.931733194524092,
+      "hub_t_x_at_1e4": 6.9394483346262925,
+      "T_at_threshold_r_1e-3": 602.8357097170724,
+      "R0_1.2": {
+        "observed_T": 53.64000797040491,
+        "observed_T_decay": 28.365004214775077,
+        "observed_T_growth": 53.64000797040491,
+        "persoons_lemma5_growth": 64.76252076740705,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.15165582443665607,
+        "p_min": 0.13168502361444664,
+        "T_decay_bound": 31.297715922868004,
+        "T_growth_bound": 76.60970507024786,
+        "T_bound": 76.60970507024786,
+        "persoons_eq23": 999.0
+      },
+      "R0_2.0": {
+        "observed_T": 13.235023137211261,
+        "observed_T_decay": 6.180010803775263,
+        "observed_T_growth": 13.235023137211261,
+        "persoons_lemma5_growth": 13.64015495900311,
+        "persoons_lemma5_exceeded": false,
+        "lemma5_hypotheses_hold": true,
+        "kappa_endemic": 0.8842525262841676,
+        "p_min": 0.46928557289927275,
+        "T_decay_bound": 6.241868590877825,
+        "T_growth_bound": 16.61622738409861,
+        "T_bound": 16.61622738409861,
+        "persoons_eq23": 999.0
+      }
+    }
+  ],
+  "kappa_across_seeds_and_sizes": {
+    "Erdos-Renyi (mean degree 10)": {
+      "kappa_median": 0.7993369045531696,
+      "kappa_min": 0.775133561193845,
+      "kappa_max": 0.8073404367591454,
+      "NIPR_median": 1.5123323885007185,
+      "kappa_by_size": {
+        "250": 0.8206140790045349,
+        "500": 0.8116670197171284,
+        "1000": 0.8115191945354329,
+        "2000": 0.8043984316654497
+      }
+    },
+    "Watts-Strogatz small world": {
+      "kappa_median": 0.9083457109034252,
+      "kappa_min": 0.8788510229289264,
+      "kappa_max": 0.9325688868767154,
+      "NIPR_median": 1.2170029701882603,
+      "kappa_by_size": {
+        "250": 0.9469864864328799,
+        "500": 0.9337236761572618,
+        "1000": 0.9156364955677951,
+        "2000": 0.9033400930451267
+      }
+    },
+    "Random geometric (2-D)": {
+      "kappa_median": 0.03611928225447133,
+      "kappa_min": 0.02919954378770381,
+      "kappa_max": 0.04969245233271603,
+      "NIPR_median": 37.243062120706625,
+      "kappa_by_size": {
+        "250": 0.1866278712253363,
+        "500": 0.1512986194247379,
+        "1000": 0.06481026871385406,
+        "2000": 0.025170683475555598
+      }
+    },
+    "Holme-Kim (scale-free, clustered)": {
+      "kappa_median": 0.12568701358425835,
+      "kappa_min": 0.11175939555755392,
+      "kappa_max": 0.1622327457141282,
+      "NIPR_median": 41.19607725195512,
+      "kappa_by_size": {
+        "250": 0.25184257019465284,
+        "500": 0.18311656971005627,
+        "1000": 0.1280751645698783,
+        "2000": 0.08402552481963801
+      }
+    },
+    "Barabasi-Albert (m=2)": {
+      "kappa_median": 0.07932119883442279,
+      "kappa_min": 0.059930203767123325,
+      "kappa_max": 0.10558363521296688,
+      "NIPR_median": 78.9970594324784,
+      "kappa_by_size": {
+        "250": 0.19491181829586218,
+        "500": 0.13584224726024302,
+        "1000": 0.08674157877061103,
+        "2000": 0.0529795815665214
+      }
+    }
+  },
+  "persoons_N50_ER_ensemble": {
+    "n_graphs": 200,
+    "kappa_median": 0.9626398445038922,
+    "kappa_q10": 0.8091812597683817,
+    "kappa_min": 0.5724498654489285
+  },
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,257 @@
+{
+  "script": "exact_checks.py",
+  "sympy": "1.14.0",
+  "python_optimize_flag": 1,
+  "n_positive": 37,
+  "n_negative_controls": 4,
+  "failed": [],
+  "status": "PASS",
+  "results": [
+    {
+      "name": "E1a_hprime",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E1b_ratio",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E1c_convexity",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "N1_convexity_wrong_power",
+      "kind": "negative_control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E1d_limit_at_zero",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E2_dissipation",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E3_envelope_ode",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "N3_envelope_wrong_sign",
+      "kind": "negative_control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E4a_closed_form_r_ne_d",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E4b_initial_value",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E4c_closed_form_r_eq_d",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E4d_subcritical_form",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E4e_subcritical_to_critical",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E4f_T_sub_solves",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E4g_T_sub_limit",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E5a_equilibrium_solvable",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E5b_residual_transform",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E6_endemic_ray",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "N6_endemic_ray_wrong",
+      "kind": "negative_control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E7_perron_ray",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E8a_kernel",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E8b_quadratic_identity",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E9a_star_eigen",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E9b_star_kappa",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E9c_star_hub",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E10a_hub_eq1",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E10b_quadratic",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E10c_gap",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E10d_hub_bound_instance",
+      "kind": "positive",
+      "pass": true,
+      "detail": "R=6.9317 lower=5.5659"
+    },
+    {
+      "name": "E11a_rho_half",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E11b_second_derivative",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "N11_second_derivative_not_two",
+      "kind": "negative_control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E11c_weighted_nsd",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E12_arith_mean",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E13a_lower",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E13b_upper",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E14_chebyshev",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E15_regular_endemic",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E16_endemic_exp",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E17_logistic",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E18_hoelder_node_order",
+      "kind": "positive",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}
