@@ -6,3 +6,4 @@
 - **Earlier replays:** before release preparation, the editor replayed the checkers from a fresh copy (outputs identical), and an independent reviewer re-ran both fast checkers on the revised version, also with identical outputs.
 - **CI:** `.github/workflows/replay.yml` reruns the quick comparer on Linux (Python 3.11, pinned packages) as a blocking job on every push, and the full comparer as a non-blocking job.
 - Environment: [ENVIRONMENT.txt](ENVIRONMENT.txt).
+- **Cross-platform correction before freezing:** the first Linux CI run of the quick comparer reported one difference: a value inside the JSON-encoded `detail_json` string of check N7a (`kappa` = 0.8287091913230644 on macOS, ...648 on Linux, a last-place floating-point difference), which the comparer had compared as an exact string. The comparer now parses JSON-encoded strings and compares their numbers with the same tolerance. No checker or output changed.

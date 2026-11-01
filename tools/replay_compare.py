@@ -6,7 +6,8 @@ Usage: python -I -B tools/replay_compare.py ROOT [--quick]
 Runs every checker with the interpreter running this script and flags -I -O -B
 (the same commands as build.sh, without the PDF build), each writing its retained
 output file names in the copy. Requires every checker to exit 0, then compares each
-regenerated JSON output with the retained one: numbers within rel 1e-7 / abs 1e-10,
+regenerated JSON output with the retained one (including JSON-encoded detail strings):
+numbers within rel 1e-7 / abs 1e-10,
 everything else exactly; package-version fields are ignored. Figures are
 regenerated, not byte-compared. Fault injection (NIMFA_INJECT_FAULT) must make
 exact_checks.py and numerical_checks.py fail. Fails if a checker writes an
@@ -48,6 +49,14 @@ def cmp(a, b, path, diffs, stats):
             return
         for i, (x, y) in enumerate(zip(a, b)):
             cmp(x, y, f'{path}[{i}]', diffs, stats)
+    elif isinstance(a, str) and isinstance(b, str) and a != b and a[:1] in '{[' and b[:1] in '{[':
+        try:  # JSON-encoded detail strings are compared value by value
+            pa, pb = json.loads(a), json.loads(b)
+        except ValueError:
+            stats['exact'] += 1
+            diffs.append(f'{path}: {a[:60]!r} vs {b[:60]!r}')
+        else:
+            cmp(pa, pb, path, diffs, stats)
     elif isinstance(a, bool) or isinstance(b, bool) or not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         stats['exact'] += 1
         if a != b:
